@@ -1,12 +1,12 @@
 <div class="container mt-3">
     <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
-                role="tab" aria-controls="nav-home" aria-selected="true">Listar</button>
-            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
-                role="tab" aria-controls="nav-profile" aria-selected="false">Crear</button>
-            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button"
-                role="tab" aria-controls="nav-contact" aria-selected="false">Editar</button>
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                type="button" role="tab" aria-controls="nav-home" aria-selected="true">Listar</button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Crear</button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Editar</button>
         </div>
     </nav>
     <div class="tab-content mt-5" id="nav-tabContent">
@@ -48,7 +48,7 @@
                     <td>
                         Activo
                     </td>
-                    <td class = "opciones">
+                    <td class="opciones">
                         <button><i class="fas fa-edit"></i></button>
                         <button><i class="fas fa-trash-alt"></i></button>
                         <button><i class="fas fa-lock"></i></button>
@@ -70,15 +70,179 @@
                     <td>
                         Activo
                     </td>
-                    <td class = "opciones">
-                        <button class = "btn btn-success"><i class="fas fa-edit"></i></button>
+                    <td class="opciones">
+                        <button class="btn btn-success"><i class="fas fa-edit"></i></button>
                         <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
                         <button class="btn btn-primary"><i class="fas fa-lock"></i></button>
                     </td>
                 </tr>
-              </table>
+            </table>
         </div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-    </div> 
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="card">
+                <div class="card-header">
+                    Nuevo Usuario
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Nombres</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Apellidos</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Recipient's username"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">@myapp.com</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <h5>Rol:</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault1"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Lector
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault1"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Editor
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault1"
+                                        id="flexRadioDefault3" checked>
+                                    <label class="form-check-label" for="flexRadioDefault3">
+                                        Administrador
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="col-2">
+                                <h5>Estado:</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Activo
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Inactivo
+                                    </label>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <a class="btn btn-primary" href="">Crear</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div class="card">
+                <div class="card-header">
+                    Editar Usuario
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Nombres</span>
+                            <input type="text" class="form-control" value="Sebastian" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Apellidos</span>
+                            <input type="text" class="form-control" value="Diaz" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" readonly disable value="jsdiazg1"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">@myapp.com</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <h5>Rol:</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Lector
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Editor
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault3" checked>
+                                    <label class="form-check-label" for="flexRadioDefault3">
+                                        Administrador
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="col-2">
+                                <h5>Estado:</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Activo
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Inactivo
+                                    </label>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col text-right">
+                                <a class="btn btn-primary" href="">Editar</a>
+                            </div>
+                            <div class="row">
+                                <div class="col text-left">
+                                    <a class="btn btn-danger" href="">Cancelar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
